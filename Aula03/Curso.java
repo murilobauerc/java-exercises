@@ -14,7 +14,11 @@ public class Curso {
     private int numeroCurso;
     private String nomeCurso;
     private Professor nomeProfessor;
-
+    
+    public Curso(){
+  
+        
+    }
     public Curso(int numeroCurso, String nomeCurso) {
         this.numeroCurso = numeroCurso;
         this.nomeCurso = nomeCurso;
@@ -22,7 +26,11 @@ public class Curso {
     public void exibeDados(){
 	System.out.print("Numero do curso: " + this.getNumeroCurso() + "\n");
 	System.out.print("Nome do curso: " + this.getNomeCurso() + "\n");
-	//System.out.print("Nome do professor: " + this.getNomeProfessor()+ "\n");
+        if (nomeProfessor == null){
+            System.out.print("Não há professor para este curso." + "\n");
+        }else{
+            System.out.print("Nome do professor: " + this.getNomeProfessor().getNome()+ "\n\n");
+        }
     }
     
     public void setNumeroCurso(int numeroCurso) {
@@ -46,6 +54,7 @@ public class Curso {
     public Professor getNomeProfessor() {
         return nomeProfessor;
     }
+
 
 
 }

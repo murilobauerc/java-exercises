@@ -28,9 +28,5 @@ public class Professor {
     public String getNome() {
         return nome;
     }
-    public int getNumero() {
-        return numero;
-    }
-
 }
     
