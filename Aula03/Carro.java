@@ -22,18 +22,18 @@ public class Carro {
             System.out.print("Pane no carro! Você não pode aumentar a velocidade de forma negativa." + "\n");
         }
         double limiteVelocidade = this.capacidadeMotor * 110;
-        if (this.velocidade + velocidade > limiteVelocidade) {
+        if (this.velocidade + qtdVelocidade > limiteVelocidade) {
             System.out.print("ERRO! Você não pode dirigir mais que o limite máximo de velocidade.\n");
             return;
         }
         this.velocidade += qtdVelocidade;
     }
     public void reduzirVelocidade(double qtdVelocidade){
-        if ((velocidade < 0) || (velocidade > this.velocidade)){
+        if ((qtdVelocidade < 0) || (qtdVelocidade > this.velocidade)){
             System.out.println("Velocidade invalida");
             return;
 	}
-	if (velocidade >= 60){
+	if (qtdVelocidade >= 60){
             System.out.println("AIR-BAG disparado");
             this.velocidade = 0;
             return;
