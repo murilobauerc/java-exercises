@@ -21,13 +21,13 @@ public class Porta {
         }
     }
     public void fecha(){
-        if (this.aberta == true) { // verificar se a porta está aberta, para caso de não fechar uma porta já fechada
+        if (this.aberta) { // verificar se a porta está aberta, para caso de não fechar uma porta já fechada
             this.aberta = false; // então fecha
         }
     }
     
     public boolean estaAberta() {
-        if (this.aberta == true) {
+        if (this.aberta) {
             System.out.print("A porta está aberta.\n");
         }else{
             System.out.print("A porta está fechada.\n");
