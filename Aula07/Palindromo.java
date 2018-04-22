@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class Palindromo {
     public static boolean verificaPalindrome(String s1) {
         String palavraAoContrario = "";
+        
         for(int i = s1.length() -1; i>=0 ; i--){  
            palavraAoContrario += s1.charAt(i);
         }
@@ -19,8 +20,9 @@ public class Palindromo {
         java.util.Scanner teclado = new Scanner(System.in);
         System.out.print("Informe uma palavra: ");    
         String s1 = teclado.nextLine();
+        
 
-        if(verificaPalindrome(s1)) {
+        if(verificaPalindrome(s1.toLowerCase().replaceAll("\\W", ""))) {
             System.out.print(s1 + " é palíndrome." + "\n");
         }else{
             System.out.print(s1 + " não é palíndrome." + "\n");
