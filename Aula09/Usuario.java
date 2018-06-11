@@ -1,7 +1,7 @@
 package com.company;
 import java.util.*;
 
-public class Usuario {
+public class Usuario implements IExibido, ICalcula{
     private String nome;
     private String email;
     private String celular;
