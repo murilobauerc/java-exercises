@@ -5,6 +5,7 @@ public class ContagemDeVogais {
     public static void main(String[] args) {
         // TODO code application logic here
         int countA = 0, countE = 0, countI = 0, countO = 0, countU = 0;
+	System.out.println("Digite o nome de um arquivo existente ou um para ser criado: ");
         Scanner teclado = new Scanner(System.in);
         String nomeArquivo = teclado.nextLine();
         
