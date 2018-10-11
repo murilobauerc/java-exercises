@@ -21,18 +21,15 @@ public class Queue<T extends Comparable<T>> implements QueueTAD<T> {
 
 	@Override
 	public T dequeue() {
-		// TODO Auto-generated method stub
-		T aux = null;
-		try {
-			aux = items.get(0);
-			items.remove(0);
+		return (this.isEmpty()) ? null : items.remove(0) ;
+		
+		/*try {
+			return items.remove(0);
 		} catch (IndexOutOfBoundsException e) {
 			e.printStackTrace();
 			System.out.println("Queue is empty, cannot dequeue.");
-		} finally {
-			return aux;
-		}
-		
+			return null;
+		}*/
 		
 		//T filaAux = items.get(0);
 		//this.items.remove(0);

@@ -55,6 +55,7 @@ class QueueTest{
 		assertThrows(IndexOutOfBoundsException.class, () -> emptyQ.dequeue());
 	}
 	
+	
 	@Test
 	void testFirst() {
 		Integer actual = q.first();
