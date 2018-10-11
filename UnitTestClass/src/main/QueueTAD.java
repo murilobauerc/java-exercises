@@ -1,3 +1,4 @@
+package main;
 public interface QueueTAD<T extends Comparable<T>> {
 	public void enqueue(T d);
 	public T dequeue();
